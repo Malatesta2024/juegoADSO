@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+      <title>Piedra, Papel o Tijera</title>
+</head>
+<body>
+      <div class="container">
+            <h1>Iniciar sesión</h1>
+            <form id="login-form">
+            <input type="text" id="username" placeholder="Usuario" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit">Iniciar sesión </button>
+      </form>
+      
+
+      <h1>Registrarse</h1>
+      <form id="register-form">
+            <input type="text" id="new-username" placeholder="Nuevo usuario" required>
+            <input type="password" id="new-password" placeholder="Nueva contraseña" required>
+            <button type="submit">Registrarse</button>
+      </form>
+
+      <div id="game" style="display: none;">
+            <h1>Piedra, Papel o Tijera</h1>
+            <button class="choice" data-choice="piedra">Piedra</button>
+            <button class="choice" data-choice="papel">Papel</button>
+            <button class="choice" data-choice="tijera">Tijera</button>
+            <div id="result"></div>
+      </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
